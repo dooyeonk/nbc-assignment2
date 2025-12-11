@@ -5,18 +5,15 @@
 
 using namespace std;
 
-void Player::printPlayerStatus() {
-  cout << "------------------------------------" << endl;
-  cout << "* 현재 능력치" << endl;
-  cout << "닉네임: " << nickname << endl;
-  cout << "Lv. " << level << endl;
-  cout << "HP: " << HP << endl;
-  cout << "MP: " << MP << endl;
-  cout << "공격력: " << power << endl;
-  cout << "방어력: " << defence << endl;
-  cout << "정확도: " << accuracy << endl;
-  cout << "속도: " << speed << endl;
-  cout << "------------------------------------" << endl;
+Player::Player(string nickname) {
+  this->nickname = nickname;
+  this->level = 1;
+  this->HP = 10;
+  this->MP = 10;
+  this->power = 100;
+  this->defence = 100;
+  this->accuracy = 50;
+  this->speed = 10;
 }
 
 // getter
@@ -38,3 +35,18 @@ void Player::setPower(int power) { this->power = power; }
 void Player::setDefence(int defence) { this->defence = defence; }
 void Player::setAccuracy(int accuracy) { this->accuracy = accuracy; }
 void Player::setSpeed(int speed) { this->speed = speed; }
+
+void Player::printPlayerStatus() {
+  cout << "------------------------------------" << endl;
+  cout << "* 현재 능력치" << endl;
+  cout << "닉네임: " << nickname << endl;
+  cout << "직업: " << job_name << endl;
+  cout << "Lv. " << level << endl;
+  cout << "HP: " << HP << endl;
+  cout << "MP: " << MP << endl;
+  cout << "공격력: " << power << endl;
+  cout << "방어력: " << defence << endl;
+  cout << "정확도: " << accuracy << endl;
+  cout << "속도: " << speed << endl;
+  cout << "------------------------------------" << endl;
+}
