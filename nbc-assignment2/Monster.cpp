@@ -7,13 +7,8 @@
 
 using namespace std;
 
-Monster::Monster(string name) {
-  this->name = name;
-  this->HP = 10;
-  this->power = 30;
-  this->defence = 10;
-  this->speed = 10;
-}
+Monster::Monster(string name)
+    : name(name), HP(10), power(30), defence(10), speed(10) {}
 
 void Monster::attack(Player* player) {
   const int damage = this->getPower() > player->getDefence()
