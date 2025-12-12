@@ -1,12 +1,17 @@
 #pragma once
 #include <string>
+
+#include "Monster.h"
 using namespace std;
+
+class Monster;
 
 class Player {
  public:
   Player(string nickname);
 
   virtual void attack() = 0;
+  virtual void attack(Monster* monster) = 0;
   void printPlayerStatus();
 
   // getter ÇÔ¼ö

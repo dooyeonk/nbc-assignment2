@@ -9,4 +9,5 @@ class Thief : public Player {
   Thief(string nickname);
 
   void attack() override;
+  void attack(Monster* monster) override;
 };
