@@ -8,7 +8,8 @@
 using namespace std;
 
 Monster::Monster(string name) {
-  this->HP = 0;
+  this->name = name;
+  this->HP = 10;
   this->power = 30;
   this->defence = 10;
   this->speed = 10;

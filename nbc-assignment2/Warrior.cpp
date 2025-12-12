@@ -18,7 +18,7 @@ void Warrior::attack(Monster* monster) {
 
   for (int i = 0; i < hit; i++) {
     const int hitDamage = damage > hit ? damage / hit : 1;
-    cout << monster->getName() << "에게 마법으로 " << hitDamage
+    cout << monster->getName() << "에게 주먹으로 " << hitDamage
          << "의 피해를 입혔다!" << endl;
   }
 

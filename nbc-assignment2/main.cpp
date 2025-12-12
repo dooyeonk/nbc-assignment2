@@ -50,6 +50,10 @@ int main() {
   player->attack();
   player->printPlayerStatus();
 
+  Monster* monster = new Monster("½½¶óÀÓ");
+  monster->attack(player);
+  player->attack(monster);
+
   if (player != nullptr) delete player;
 
   return 0;

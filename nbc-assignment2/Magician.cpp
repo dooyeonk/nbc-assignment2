@@ -11,7 +11,7 @@ Magician::Magician(string nickname) : Player(nickname) {
   this->job_name = "Magician";
 }
 
-void Magician::attack() { cout << "법사의 주문"; }
+void Magician::attack() { cout << "법사의 주문" << endl; }
 void Magician::attack(Monster* monster) {
   const int hit = 1;
   const int damage = this->power > monster->getDefence()

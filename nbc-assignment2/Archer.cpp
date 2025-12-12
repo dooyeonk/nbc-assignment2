@@ -11,7 +11,7 @@ Archer::Archer(string nickname) : Player(nickname) {
   this->job_name = "Archer";
 }
 
-void Archer::attack() { cout << "미간에 화살"; }
+void Archer::attack() { cout << "미간에 화살" << endl; }
 void Archer::attack(Monster* monster) {
   const int hit = 3;
   const int damage = this->power > monster->getDefence()

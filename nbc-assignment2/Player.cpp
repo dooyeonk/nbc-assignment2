@@ -8,10 +8,10 @@ using namespace std;
 Player::Player(string nickname) {
   this->nickname = nickname;
   this->level = 1;
-  this->HP = 10;
-  this->MP = 10;
-  this->power = 100;
-  this->defence = 100;
+  this->HP = 100;
+  this->MP = 100;
+  this->power = 15;
+  this->defence = 15;
   this->accuracy = 50;
   this->speed = 10;
 }
